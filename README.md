@@ -12,26 +12,22 @@ Backend: Node.js, Express.js
 Database: PostgreSQL
 Version Control: Git
 Installation
-Clone the repository:
 
-bash
-Copy code
+Clone the repository:
 git clone https://github.com/suhaib-codes/Eventify.git
 cd Eventify
-Install the dependencies:
 
-bash
-Copy code
+Install the dependencies:
 npm install
+
 Set up the PostgreSQL database:
 
 Create a PostgreSQL database.
 Update the database configuration in the .env file.
-Run the application:
 
-bash
-Copy code
-npm start
+Run the application:
+npm start/node server.js
+
 Access the application at http://localhost:3000.
 
 Usage
