@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Organisers | Eventify</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo"><span>E</span>ventify</a>
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="service.html">service</a>
+      <a href="about.html">about</a>
+      <a href="gallery.html">gallery</a>
+      <a href="price.html">price</a>
+      <a href="contact us.html">contact</a>
+    </nav>
+    <div id="menu-bars" class="fas fa-bars"></div>
+  </header>
+
+  <section>
+    <h1 class="heading">Admin<span> Panel</span></h1>
+
+    <div class="card">
+      <div class="card__content">
+        <span class="ha">Booking Inquiry</span>
+        {{contactHtml}}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__content">
+        <span class="ha">Confirm Booking</span>
+        {{bookingHtml}}
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="box-container">
+      <!-- Footer content here -->
+    </div>
+    <div class="credit">created by <span>Group 2</span> | all rights reserved</div>
+  </section>
+
+  <div class="theme-toggler">
+    <div class="toggle-btn"><i class="fas fa-cog"></i></div>
+    <h3>choose color</h3>
+    <div class="buttons">
+      <div class="theme-btn" style="background: #ccff33"></div>
+      <div class="theme-btn" style="background: #d35400"></div>
+      <div class="theme-btn" style="background: #f39c12"></div>
+      <div class="theme-btn" style="background: #1abc9c"></div>
+      <div class="theme-btn" style="background: #3498db"></div>
+      <div class="theme-btn" style="background: #9b59b6"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script src="/server.js"></script>
+</body>
+</html>
+
+

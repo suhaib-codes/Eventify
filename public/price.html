@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Event Organisers | Eventify</title>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- header section starts  -->
+  <header class="header">
+    <a href="#" class="logo"><span>E</span>ventify</a>
+
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="service.html">service</a>
+      <a href="about.html">about</a>
+      <a href="gallery.html">gallery</a>
+      <a href="price.html">price</a>
+      <a href="contact us.html">contact</a>
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+  </header>
+
+  <!-- price section starts  -->
+  <section class="price" id="price">
+    <h1 class="heading">our <span>pricing</span></h1>
+
+    <div class="box-container">
+      <div class="box">
+        <h3 class="titl">basic</h3>
+        <h3 class="amount">Rs. 20,000</h3>
+        <ul>
+          <li><i class="fas fa-check"></i>full services</li>
+
+          <li><i class="fas fa-check"></i> photos</li>
+          <li><i class="fas fa-check"></i> food and drinks</li>
+          <li><i></i> </li>
+          <li><i></i> </li>
+          <li><i></i> </li>
+        </ul>
+        <a href="#" class="btn" onclick="showForm()">check out</a>
+      </div>
+
+      <div class="box">
+        <h3 class="titl">prime</h3>
+        <h3 class="amount">Rs. 50,000</h3>
+        <ul>
+          <li><i class="fas fa-check"></i>full services</li>
+          <li><i class="fas fa-check"></i> decorations</li>
+          <li><i class="fas fa-check"></i> photos and video</li>
+          <li><i class="fas fa-check"></i> food and drinks</li>
+          <li><i></i> </li>
+          <li><i></i> </li>
+
+        </ul>
+        <a href="#" class="btn" onclick="showForm()">check out</a>
+      </div>
+
+      <div class="box">
+        <h3 class="titl">luxury</h3>
+        <h3 class="amount">Rs. 90,000</h3>
+        <ul>
+          <li><i class="fas fa-check"></i>full services</li>
+          <li><i class="fas fa-check"></i> decorations</li>
+          <li><i class="fas fa-check"></i> photos and video</li>
+          <li><i class="fas fa-check"></i> food and drinks</li>
+          <li><i class="fas fa-check"></i> invitation card</li>
+          <li><i></i> </li>
+        </ul>
+        <a href="#" class="btn" onclick="showForm()">check out</a>
+      </div>
+
+      <div class="box">
+        <h3 class="titl">ultra</h3>
+        <h3 class="amount">Rs. 150,000</h3>
+        <ul>
+          <li><i class="fas fa-check"></i>full services</li>
+          <li><i class="fas fa-check"></i> decorations</li>
+          <li><i class="fas fa-check"></i> photos and video</li>
+          <li><i class="fas fa-check"></i> food and drinks</li>
+          <li><i class="fas fa-check"></i> music</li>
+          <li><i class="fas fa-check"></i> invitation card</li>
+        </ul>
+        <a href="#" class="btn" onclick="showForm()">check out</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <div id="formContainer" class="hidden">
+    <form action="bookingForm" method="POST" class="form" id="priceForm">
+      <span class="close-btn" onclick="hideForm()">&times;</span>
+      <p class="title">Book</p>
+      <p class="message">Fill all the details carefully</p>
+      <div class="flex">
+        <label>
+          <input name="first_name" required="" placeholder="" type="text" class="input">
+          <span>Firstname</span>
+        </label>
+        <label>
+          <input name="last_name" required="" placeholder="" type="text" class="input">
+          <span>Lastname</span>
+        </label>
+      </div>
+      <label>
+        <input name="email" required="" placeholder="" type="email" class="input">
+        <span>Email</span>
+      </label>
+      <label>
+        <input name="number" required="" placeholder="" type="number" class="input">
+        <span>Number</span>
+      </label>
+      <label>
+        <textarea name="address" required="" placeholder="" class="input"></textarea>
+        <span>Address</span>
+      </label>
+      <label>
+        <textarea name="description" required=" placeholder="" class=" input"></textarea>
+        <span>Description</span>
+      </label>
+
+      <label>
+        <span>Select Plan</span>
+        <div class="checkbox-group">
+          <label><input name="price" type="radio" name="plan" value="basic"> Basic</label>
+          <label><input name="price" type="radio" name="plan" value="prime"> Prime</label>
+          <label><input name="price" type="radio" name="plan" value="luxury"> Luxury</label>
+          <label><input name="price" type="radio" name="plan" value="ultra"> Ultra</label>
+        </div>
+      </label>
+      <button type="submit" class="submit">Submit</button>
+     
+    </form>
+  </div>
+
+  <!-- footer section starts  -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>branches</h3>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> bangalore </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> hyderabad </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> delhi </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> kolkata </a>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> chennai </a>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="index.html"> <i class="fas fa-arrow-right"></i> home </a>
+        <a href="service.html"> <i class="fas fa-arrow-right"></i> service </a>
+        <a href="about.html"> <i class="fas fa-arrow-right"></i> about </a>
+        <a href="gallery.html"> <i class="fas fa-arrow-right"></i> gallery </a>
+        <a href="price.html"> <i class="fas fa-arrow-right"></i> price </a>
+        <a href="contact us.html"> <i class="fas fa-arrow-right"></i> contact </a>
+        <a href="admin.html"> <i class="fas fa-arrow-right"></i> admin</a>
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+        <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+        <a href="#"> <i class="fas fa-envelope"></i> xyz@gmail.com </a>
+        <a href="#"> <i class="fas fa-envelope"></i> xyz@gmail.com </a>
+        <a href="#">
+          <i class="fas fa-map-marker-alt"></i> bangalore, india
+        </a>
+      </div>
+
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#"> <i class="fab fa-linkedin-in"></i> linkedin </a>
+      </div>
+    </div>
+
+    <div class="credit">
+      created by <span>Group 2</span> | all rights reserved
+    </div>
+  </section>
+
+
+  <div class="theme-toggler">
+    <div class="toggle-btn">
+      <i class="fas fa-cog"></i>
+    </div>
+
+    <h3>choose color</h3>
+
+    <div class="buttons">
+      <div class="theme-btn" style="background: #ccff33"></div>
+      <div class="theme-btn" style="background: #d35400"></div>
+      <div class="theme-btn" style="background: #f39c12"></div>
+      <div class="theme-btn" style="background: #1abc9c"></div>
+      <div class="theme-btn" style="background: #3498db"></div>
+      <div class="theme-btn" style="background: #9b59b6"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!--JS file-->
+  <script src="/script.js"></script>
+  <script src="/app.js"></script>
+
+</body>
+
+</html>
